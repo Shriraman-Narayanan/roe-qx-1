@@ -1,0 +1,26 @@
+name: Automated QA for DataDash
+
+on:
+  push:
+    paths:
+      - 'scrape_and_sum.js'
+      - '.github/workflows/qa_playwright.yml'
+  workflow_dispatch:
+
+jobs:
+  qa_tables:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Playwright Script (23f2002758@ds.study.iitm.ac.in)
+        run: node scrape_and_sum.js
