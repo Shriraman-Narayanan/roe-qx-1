@@ -1,0 +1,23 @@
+{
+  "name": "reo-qx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scrape_and_sum.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shriraman-narayanan/reo-qx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shriraman-narayanan/reo-qx/issues"
+  },
+  "homepage": "https://github.com/shriraman-narayanan/reo-qx#readme",
+  "dependencies": {
+    "playwright": "^1.54.1"
+  }
+}
